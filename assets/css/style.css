@@ -88,6 +88,8 @@ header {
   border: 1px solid var(--green);
   border-radius: 8px;
   text-decoration: none;
+  display: flex;
+  flex-direction: column;
 }
 
 .playlist div {
