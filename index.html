@@ -1,84 +1,19 @@
-<!DOCTYPE html>
-<html lang='en' dir='ltr'>
-  <head>
-    <meta charset='utf-8'>
-    <title>Top Ten Playlists</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <meta name="theme-color" content="#1DB954">
-    <link rel='stylesheet' href='./assets/css/style.css'>
-    <link rel='shortcut icon' type='image/x-icon' href='favicon.ico'>
-  </head>
-  <body>
-    <header>
-      <div>Top Ten Playlists</div>
-      <a href='https://www.launchtabs.com/' class='home-link'>Other Cool Stuff</a>
-    </header>
-    <div class='header-fix'></div>
-    <div class='container'>
-      <div class='playlist-container'>
-        <div class='playlist'>
-          <div class='playlist-name'>Josh McLeod</div>
-          <iframe src="https://open.spotify.com/embed/playlist/1V7uHqbh2OmmUV9LNVuifX" width="300" height="380" frameborder="0"
-            allowtransparency="true" allow="encrypted-media"></iframe>
-        </div>
-        <div class='playlist'>
-          <div class='playlist-name'>Ben Grube</div>
-          <iframe src="https://open.spotify.com/embed/playlist/3bX80DVSW1NWldjgzrr9ya" width="300" height="380" frameborder="0"
-            allowtransparency="true" allow="encrypted-media"></iframe>
-        </div>
-        <div class='playlist'>
-          <div class='playlist-name'>Mark Martin</div>
-          <iframe src="https://open.spotify.com/embed/playlist/1vzm6fFnWEEtWbhUONLtVm" width="300" height="380" frameborder="0"
-            allowtransparency="true" allow="encrypted-media"></iframe>
-        </div>
-        <div class='playlist'>
-          <div class='playlist-name'>Tucker Monroe</div>
-          <iframe src="https://open.spotify.com/embed/playlist/7eU2N4tJ90GgiQjTldgLN9" width="300" height="380" frameborder="0"
-            allowtransparency="true" allow="encrypted-media"></iframe>
-        </div>
-        <div class='playlist'>
-          <div class='playlist-name'>Andrew Baez</div>
-          <iframe src="https://open.spotify.com/embed/playlist/6C5lZNhvxJ12hiJOIP5A1N" width="300" height="380" frameborder="0"
-            allowtransparency="true" allow="encrypted-media"></iframe>
-        </div>
-        <div class='playlist'>
-          <div class='playlist-name'>Will Baker</div>
-          <iframe src="https://open.spotify.com/embed/playlist/56FFHbfAsoVWWDFeCymmQw" width="300" height="380" frameborder="0"
-            allowtransparency="true" allow="encrypted-media"></iframe>
-        </div>
-        <div class='playlist'>
-          <div class='playlist-name'>David Spalding</div>
-          <iframe src="https://open.spotify.com/embed/playlist/2xgoeJLgW6V4ngY4W1tPxp" width="300" height="380" frameborder="0"
-            allowtransparency="true" allow="encrypted-media"></iframe>
-        </div>
-        <div class='playlist'>
-          <div class='playlist-name'>Samuel Hayes</div>
-          <iframe width="300" height="190" src="https://www.youtube.com/embed/videoseries?list=PLC1kHNGtjS36h1TmT5Yi2xqyD_72pX2ph"
-            frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-          <iframe width="300" height="190" src="https://www.youtube.com/embed/videoseries?list=PLC1kHNGtjS359lQFGI4MUQTYfDhneALMF"
-            frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-        </div>
-        <div class='playlist'>
-          <div class='playlist-name'>Andrew McLeod</div>
-          <iframe src="https://open.spotify.com/embed/playlist/5jLgL8uUtpGNcNLJMOEC0c" width="300" height="380" frameborder="0"
-            allowtransparency="true" allow="encrypted-media"></iframe>
-        </div>
-        <div class='playlist'>
-          <div class='playlist-name'>Jeremy Walton</div>
-          <iframe src="https://open.spotify.com/embed/playlist/1lDONVb6KcI3JZ9dRWDmFj" width="300" height="380" frameborder="0"
-            allowtransparency="true" allow="encrypted-media"></iframe>
-        </div>
-        <div class='playlist'>
-          <div class='playlist-name'>Ryan Curtis</div>
-          <iframe src="https://open.spotify.com/embed/playlist/22I7eSefTmDrfOUF209Ufj" width="300" height="380" frameborder="0"
-            allowtransparency="true" allow="encrypted-media"></iframe>
-        </div>
-        <div class='playlist'>
-          <div class='playlist-name'>Isaac Hayes</div>
-          <iframe src="https://open.spotify.com/embed/playlist/1pwXyQZBJXRXxJ3F53Yhpj" width="300" height="380" frameborder="0"
-            allowtransparency="true" allow="encrypted-media"></iframe>
-        </div>
-      </div>
-    </div>
-  </body>
-</html>
+---
+layout: default
+---
+
+<div class='playlist-container'>
+  {% include playlist.html name='Josh McLeod' id='1V7uHqbh2OmmUV9LNVuifX' %}
+  {% include playlist.html name='Ben Grube' id='3bX80DVSW1NWldjgzrr9ya' %}
+  {% include playlist.html name='Mark Martin' id='1vzm6fFnWEEtWbhUONLtVm' %}
+  {% include playlist.html name='Tucker Monroe' id='7eU2N4tJ90GgiQjTldgLN9' %}
+  {% include playlist.html name='Andrew Baez' id='6C5lZNhvxJ12hiJOIP5A1N' %}
+  {% include playlist.html name='Will Baker' id='56FFHbfAsoVWWDFeCymmQw' %}
+  {% include playlist.html name='David Spalding' id='2xgoeJLgW6V4ngY4W1tPxp' %}
+  {% include playlist.html provider='youtube' name='Samuel Hayes' id='PLC1kHNGtjS36h1TmT5Yi2xqyD_72pX2ph' id2='PLC1kHNGtjS359lQFGI4MUQTYfDhneALMF' %}
+  {% include playlist.html name='Andrew McLeod' id='5jLgL8uUtpGNcNLJMOEC0c' %}
+  {% include playlist.html name='Jeremy Walton' id='1lDONVb6KcI3JZ9dRWDmFj' %}
+  {% include playlist.html name='Ryan Curtis' id='22I7eSefTmDrfOUF209Ufj' %}
+  {% include playlist.html name='Isaac Hayes' id='1pwXyQZBJXRXxJ3F53Yhpj' %}
+  {% include playlist.html name='Jake Martin' id='1BABkaAlPEtutevaWezh3r' %}
+</div>
