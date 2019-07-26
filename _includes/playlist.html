@@ -1,0 +1,14 @@
+<div class='playlist'>
+  <div class='playlist-name'>{{ include.name }}</div>
+  {% if include.provider == 'youtube' %}
+    <iframe width="300" height="190" src={{ "https://www.youtube.com/embed/videoseries?list=" | append: include.id }}
+      frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    {% if include.id2 %}
+      <iframe width="300" height="190" src={{ "https://www.youtube.com/embed/videoseries?list=" | append: include.id2 }}
+        frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    {% endif %}
+  {% else %}
+    <iframe src={{ "https://open.spotify.com/embed/playlist/" | append: include.id }} width="300" height="380"
+      frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+  {% endif %}
+</div>
