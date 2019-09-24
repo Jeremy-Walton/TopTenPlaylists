@@ -7,5 +7,4 @@ future: true
 jailed: false
 theme: jekyll-theme-primer
 gfm_quirks: paragraph_end
-site.baseurl:
-site.github.url: https://www.launchtabs.com/TopTenPlaylists
+baseurl: /TopTenPlaylists
