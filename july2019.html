@@ -1,0 +1,9 @@
+---
+layout: default
+---
+
+<div class='playlist-container'>
+  {% for playlist in site.data.july2019 %}
+  {% include playlist.html name=playlist.name provider=playlist.provider id=playlist.id id2=playlist.id2 %}
+  {% endfor %}
+</div>

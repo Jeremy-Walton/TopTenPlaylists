@@ -70,6 +70,24 @@ header {
   height: 64px;
 }
 
+.menu {
+  display: flex;
+  height: 32px;
+  border-bottom: 1px solid var(--green);
+  justify-content: center;
+  align-items: center;
+}
+
+.menu__item {
+  padding: 0 1rem;
+  color: var(--white);
+  text-decoration: none;
+}
+
+.menu__item:hover {
+  text-decoration: underline;
+}
+
 .container {
   margin: auto;
   padding: 16px;

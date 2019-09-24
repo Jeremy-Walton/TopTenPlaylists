@@ -3,17 +3,7 @@ layout: default
 ---
 
 <div class='playlist-container'>
-  {% include playlist.html name='Josh McLeod' id='1V7uHqbh2OmmUV9LNVuifX' %}
-  {% include playlist.html name='Ben Grube' id='3bX80DVSW1NWldjgzrr9ya' %}
-  {% include playlist.html name='Mark Martin' id='1vzm6fFnWEEtWbhUONLtVm' %}
-  {% include playlist.html name='Tucker Monroe' id='7eU2N4tJ90GgiQjTldgLN9' %}
-  {% include playlist.html name='Andrew Baez' id='6C5lZNhvxJ12hiJOIP5A1N' %}
-  {% include playlist.html name='Will Baker' id='56FFHbfAsoVWWDFeCymmQw' %}
-  {% include playlist.html name='David Spalding' id='2xgoeJLgW6V4ngY4W1tPxp' %}
-  {% include playlist.html provider='youtube' name='Samuel Hayes' id='PLC1kHNGtjS36h1TmT5Yi2xqyD_72pX2ph' id2='PLC1kHNGtjS359lQFGI4MUQTYfDhneALMF' %}
-  {% include playlist.html name='Andrew McLeod' id='5jLgL8uUtpGNcNLJMOEC0c' %}
-  {% include playlist.html name='Jeremy Walton' id='1lDONVb6KcI3JZ9dRWDmFj' %}
-  {% include playlist.html name='Ryan Curtis' id='22I7eSefTmDrfOUF209Ufj' %}
-  {% include playlist.html name='Isaac Hayes' id='1pwXyQZBJXRXxJ3F53Yhpj' %}
-  {% include playlist.html name='Jake Martin' id='1BABkaAlPEtutevaWezh3r' %}
+  {% for playlist in site.data.october2019 %}
+    {% include playlist.html name=playlist.name provider=playlist.provider id=playlist.id id2=playlist.id2 %}
+  {% endfor %}
 </div>
